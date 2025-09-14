@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 
 class ListFragment : Fragment(), View.OnClickListener {
-    private var param1: String? = null
-    private var param2: String? = null
 
     private lateinit var coffeeListener: CoffeeListener
 
@@ -26,15 +24,13 @@ class ListFragment : Fragment(), View.OnClickListener {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val coffeeList = listOf<View>(
             view.findViewById(R.id.affogato),
             view.findViewById(R.id.americano),
@@ -51,6 +47,6 @@ class ListFragment : Fragment(), View.OnClickListener {
     }
 
     companion object {
-        // placeholder / keep if needed
+        const val COFFEE_ID = "COFFEE_ID"
     }
 }
