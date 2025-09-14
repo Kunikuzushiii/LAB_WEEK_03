@@ -31,11 +31,26 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/americano_title"/>
+        <!-- same top content -->
         <TextView
             android:id="@+id/latte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/latte_title"/>
+
+        <TextView
+            android:id="@+id/mocha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/mocha_title"/>
+
+        <TextView
+            android:id="@+id/cappuccino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/cappuccino_title"/>
     </LinearLayout>
 </ScrollView>
